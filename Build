@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+BASE=$(dirname "$0")
+DOCROOT="$BASE/.build/docroot"
+
+mkdir -p "$DOCROOT"
+env | sort > "$DOCROOT/env.txt"
