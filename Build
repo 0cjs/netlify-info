@@ -4,4 +4,4 @@ BASE=$(dirname "$0")
 DOCROOT="$BASE/.build/docroot"
 
 mkdir -p "$DOCROOT"
-env | sort > "$DOCROOT/env.txt"
+env | LC_COLLATE=C sort > "$DOCROOT/env.txt"
